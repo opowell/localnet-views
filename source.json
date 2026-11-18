@@ -1,0 +1,8 @@
+{
+  "name": "Localnet views",
+  "sources": [
+    "https://github.com/opowell/localnet-view-hackernews",
+    "https://github.com/opowell/localnet-view-reddit",
+    "https://github.com/opowell/localnet-view-guardian"
+  ]
+}
