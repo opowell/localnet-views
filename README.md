@@ -14,6 +14,7 @@ itself as a view source in Localnet (Library → View sources → New view sourc
 | Hacker News (listing, content) | [localnet-view-hackernews](https://github.com/opowell/localnet-view-hackernews) |
 | Reddit and Reddit compact (listing), Reddit (content) | [localnet-view-reddit](https://github.com/opowell/localnet-view-reddit) |
 | The Guardian (listing, content) | [localnet-view-guardian](https://github.com/opowell/localnet-view-guardian) |
+| Wikipedia (content) | [localnet-view-wikipedia](https://github.com/opowell/localnet-view-wikipedia) |
 
 ## Writing a view
 
@@ -54,8 +55,9 @@ alone, restyling Read as it is.
 
 A stylesheet is kept to the view's own box: every rule is nested under it, so `.title { … }` styles the view's titles
 and nothing else, and `& { … }` the box itself. A content view's rules reach Read's page by its classes
-(`.reader-viewport`, `.reader-flow` and its `p`, `h2`, `h3`, `.reader-quote`, `.reader-item`, `.reader-code`,
-`.reader-table`, `.reader-figure`; `.reader-comments`, `.reader-comment`, `.reader-comment-head`,
+(`.reader-viewport`, `.reader-flow` and its `p`, `.reader-heading` (its level in `data-level`, `2` for `##`), `.reader-quote`, `.reader-item`, `.reader-code`,
+`.reader-table` (`.reader-fact-table` for an infobox's facts), `.reader-figure` (`.reader-figure--beside[data-small]` for one
+standing beside the text); `.reader-comments`, `.reader-comment`, `.reader-comment-head`,
 `.reader-comment-author`, `.reader-comment-meta`, `.reader-comment-replies`; the head's own `.lnv-head`) and outweigh
 Read's own rules. Localnet is dark unless the light theme is chosen, or the system's light one is, as
 `:root[data-theme='light'] &` and `@media (prefers-color-scheme: light) { :root:not([data-theme='dark']) & { … } }` say.
