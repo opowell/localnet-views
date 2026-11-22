@@ -15,6 +15,7 @@ itself as a view source in Localnet (Library → View sources → New view sourc
 | Reddit and Reddit compact (listing), Reddit (content) | [localnet-view-reddit](https://github.com/opowell/localnet-view-reddit) |
 | The Guardian (listing, content) | [localnet-view-guardian](https://github.com/opowell/localnet-view-guardian) |
 | Wikipedia (content) | [localnet-view-wikipedia](https://github.com/opowell/localnet-view-wikipedia) |
+| YouTube (listing) | [localnet-view-youtube](https://github.com/opowell/localnet-view-youtube) |
 
 ## Writing a view
 
@@ -45,7 +46,7 @@ A link to a web page opens in a new tab. Scripts, frames, forms, styles and even
 
 A **listing** template is given `rows` (the page of rows shown) and `count` (how many match in all). Each row has
 `rank`, `title`, `url` (the page, where it is one), `site` (its host), `source` (where on its site it comes from:
-`reddit.com/r/gamedev`), `place` (the same without its site: `r/gamedev`), `picture`, `points`, `comments`, `author`, `ago` ("3 hr. ago"), `unread`, `read`, `saved`,
+`reddit.com/r/gamedev`), `place` (the same without its site: `r/gamedev`), `picture`, `points`, `comments`, `author`, `ago` ("3 hr. ago", or the age a page gave in words, "6mo ago"), `views` (how often it was watched or played: "55M plays", "1.2M views"), `length` (its running time: "4:36"), `unread`, `read`, `saved`,
 `type` ("Results"), `metrics` and `details` (each `[{ label, text }]`), and `fields`, every field as Localnet has it.
 
 A **content** template is the head drawn over Read's page in place of its own, given `item`: `title`, `url` (what the
