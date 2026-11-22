@@ -16,6 +16,7 @@ itself as a view source in Localnet (Library → View sources → New view sourc
 | The Guardian (listing, content) | [localnet-view-guardian](https://github.com/opowell/localnet-view-guardian) |
 | Wikipedia (content) | [localnet-view-wikipedia](https://github.com/opowell/localnet-view-wikipedia) |
 | YouTube (listing) | [localnet-view-youtube](https://github.com/opowell/localnet-view-youtube) |
+| YouTube Music (listing) | [localnet-view-youtube-music](https://github.com/opowell/localnet-view-youtube-music) |
 
 ## Writing a view
 
